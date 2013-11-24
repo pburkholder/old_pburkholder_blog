@@ -1,0 +1,15 @@
+---
+layout: post
+title: ! 'Chef pain point 1: multiple repos'
+date: '2013-08-28T09:42:06-04:00'
+tags: 
+tumblr_url: http://www.pburkholder.com/post/59585264397/chef-pain-point-1-multiple-repos
+---
+<p>At $WORK we've been migrating from Puppet to Chef. I was in the minority in voting to stay with Puppet, since we were already 1/2 way through refactoring our initial Puppet implementation. </p>
+<p>I have nothing against Chef as such, but there are some pain points that
+others considering a Puppet to Chef migration should consider. I need to write
+a full analysis of this migration, but with time short, I'll start by just sharing some pain points which I'll later pull into that magnum opus.</p>
+<p><strong>Multiple repos</strong></p>
+<p>Our Puppet code was in one repository. Our Chef code is in 24 repos so we
+can use Berkshelf that's tied to versions and branches. When a Puppet module
+failed due to some odd dependency, I could 'ack' through the repo to find the a clue for what I was missing. Try that with 15 repos. Ugh.</p>

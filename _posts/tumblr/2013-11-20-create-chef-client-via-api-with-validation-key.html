@@ -1,0 +1,11 @@
+---
+layout: post
+title: Create chef client via api with validation key
+date: '2013-11-20T16:49:35-05:00'
+tags: 
+tumblr_url: http://www.pburkholder.com/post/67593840733/create-chef-client-via-api-with-validation-key
+---
+<p><pre>    knife exec -s $CHEF \
+ -E 'client_desc = { "name" =&gt; "peterb-hack", "admin" =&gt; false}; n=api.post "/clients", client_desc; puts n["private_key"]' \
+ -u chef-validator -k /tmp/chef-validator.pem &gt; client.pem
+</pre></p>
