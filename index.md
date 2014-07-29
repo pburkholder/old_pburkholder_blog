@@ -1,11 +1,13 @@
 ---
 layout: page
 title: Peter Burkholder
-tagline: Why did I ever blog on Tumblr?
+tagline: WIP
 ---
 {% include JB/setup %}
 
 ## Posts
+
+### I'm not here right now, please see <a href="http://www.pburkholder.com>www.pburkholder.com</a>
 
 <ul class="posts">
   {% for post in site.posts %}
