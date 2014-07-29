@@ -7,7 +7,7 @@ tagline: WIP
 
 ## Posts
 
-### I'm not here right now, please see <a href="http://www.pburkholder.com>www.pburkholder.com</a>
+### I'm not here right now, please see [old site](http://www.pburkholder.com/) 
 
 <ul class="posts">
   {% for post in site.posts %}
